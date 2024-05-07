@@ -1,0 +1,1 @@
+select *, orderid as order_id, amount/100 as amt_dollars from {{ source('stripe', 'payment') }}
